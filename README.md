@@ -1,3 +1,3 @@
-# faizan-ai-ml.github.io
+# faizan.github.io
 
 my portfolio
