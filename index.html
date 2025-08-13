@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Faizan Haider - Machine Learning Engineer | Portfolio</title>
+    <meta name="description"
+        content="Faizan Haider - Professional Machine Learning Engineer specializing in AI solutions, deep learning, and data science. Explore my portfolio of innovative ML projects.">
+    <meta name="keywords"
+        content="Faizan Haider, Machine Learning, AI, Data Science, Deep Learning, Python, Portfolio, Engineer">
+    <meta name="author" content="Faizan Haider">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://faizanhaider.me/">
+    <meta property="og:title" content="Faizan Haider - Machine Learning Engineer | Portfolio">
+    <meta property="og:description"
+        content="Professional Machine Learning Engineer specializing in AI solutions, deep learning, and data science.">
+    <meta property="og:image" content="http://faizanhaider.me/assets/images/profile.jpg">
+    <meta property="og:image:alt" content="Faizan Haider - Machine Learning Engineer">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Faizan Haider Portfolio">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://faizanhaider.me/">
+    <meta property="twitter:title" content="Faizan Haider - Machine Learning Engineer | Portfolio">
+    <meta property="twitter:description"
+        content="Professional Machine Learning Engineer specializing in AI solutions, deep learning, and data science.">
+    <meta property="twitter:image" content="http://faizanhaider.me/assets/images/profile.jpg">
+    <meta property="twitter:image:alt" content="Faizan Haider - Machine Learning Engineer">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="./assets/images/favicon-32x32.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="./assets/images/favicon-16x16.svg">
+    <link rel="mask-icon" href="./assets/images/favicon-circle.svg" color="#2563eb">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-TileImage" content="./assets/images/apple-touch-icon.svg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://faizanhaider.me/">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Faizan Haider",
+      "jobTitle": "Machine Learning Engineer",
+      "url": "http://faizanhaider.me/",
+      "sameAs": [
+        "https://www.linkedin.com/in/faizan-ai-ml/",
+        "https://github.com/faizan-ai-ml",
+        "https://www.kaggle.com/faizandataanalyst"
+      ],
+      "knowsAbout": ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Data Science", "Python"]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="navLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="40" height="40" rx="8" fill="url(#navLogoGradient)" />
+                        <text x="20" y="28" text-anchor="middle" fill="white" font-family="Inter, sans-serif"
+                            font-weight="700" font-size="18">FH</text>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Faizan Haider</span>
+                        <span class="hero-role">Machine Learning Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about building intelligent systems that solve real-world problems through
+                        advanced machine learning and artificial intelligence technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <div class="profile-image-container">
+                            <img src="./assets/images/profile.jpg" alt="Faizan Haider - Machine Learning Engineer"
+                                class="profile-image">
+                            <div class="profile-border"></div>
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Discover my journey in machine learning</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a dedicated Machine Learning Engineer with a passion for transforming data into
+                        actionable insights. With expertise in deep learning, natural language processing,
+                        and computer vision, I create innovative AI solutions that drive business value.
+                    </p>
+                    <p class="about-paragraph">
+                        My approach combines strong theoretical foundations with practical implementation
+                        skills, ensuring that complex ML models translate into real-world impact. I thrive
+                        on challenging problems and continuous learning in this rapidly evolving field.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="about-profile-container">
+                        <img src="./assets/images/profile.jpg" alt="Faizan Haider - Machine Learning Engineer"
+                            class="about-profile-image">
+                        <div class="about-profile-overlay">
+                            <div class="about-profile-info">
+                                <h4>Faizan Haider</h4>
+                                <p>ML Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">My expertise in machine learning and related technologies</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Machine Learning -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="32" height="32" viewBox="0 0 32 32" class="skill-icon">
+                            <rect width="32" height="32" rx="8" fill="#2563eb" opacity="0.1" />
+                            <circle cx="8" cy="8" r="2" fill="#2563eb" />
+                            <circle cx="16" cy="8" r="2" fill="#2563eb" />
+                            <circle cx="24" cy="8" r="2" fill="#2563eb" />
+                            <circle cx="8" cy="16" r="2" fill="#10b981" />
+                            <circle cx="16" cy="16" r="2" fill="#10b981" />
+                            <circle cx="24" cy="16" r="2" fill="#10b981" />
+                            <circle cx="12" cy="24" r="2" fill="#f59e0b" />
+                            <circle cx="20" cy="24" r="2" fill="#f59e0b" />
+                            <line x1="8" y1="8" x2="8" y2="16" stroke="#2563eb" stroke-width="1" />
+                            <line x1="16" y1="8" x2="16" y2="16" stroke="#2563eb" stroke-width="1" />
+                            <line x1="8" y1="16" x2="12" y2="24" stroke="#10b981" stroke-width="1" />
+                            <line x1="16" y1="16" x2="20" y2="24" stroke="#10b981" stroke-width="1" />
+                        </svg>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Deep Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Computer Vision</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="32" height="32" viewBox="0 0 32 32" class="skill-icon">
+                            <rect width="32" height="32" rx="8" fill="#10b981" opacity="0.1" />
+                            <rect x="4" y="4" width="24" height="24" rx="4" fill="#10b981" opacity="0.2" />
+                            <rect x="6" y="8" width="12" height="2" fill="#10b981" />
+                            <rect x="6" y="12" width="8" height="2" fill="#10b981" />
+                            <rect x="6" y="16" width="14" height="2" fill="#10b981" />
+                            <rect x="6" y="20" width="10" height="2" fill="#10b981" />
+                        </svg>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="32" height="32" viewBox="0 0 32 32" class="skill-icon">
+                            <rect width="32" height="32" rx="8" fill="#f59e0b" opacity="0.1" />
+                            <rect x="6" y="6" width="20" height="20" rx="2" fill="none" stroke="#f59e0b"
+                                stroke-width="2" />
+                            <rect x="10" y="10" width="12" height="12" rx="1" fill="#f59e0b" opacity="0.3" />
+                            <circle cx="16" cy="16" r="3" fill="#f59e0b" />
+                        </svg>
+                        <h3>Frameworks & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Deployment -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="32" height="32" viewBox="0 0 32 32" class="skill-icon">
+                            <rect width="32" height="32" rx="8" fill="#8b5cf6" opacity="0.1" />
+                            <path
+                                d="M8 18c-2.2 0-4-1.8-4-4s1.8-4 4-4c0.4-2.6 2.6-4.5 5.2-4.5 2.2 0 4.1 1.4 4.8 3.4 0.3-0.1 0.7-0.1 1-0.1 2.8 0 5 2.2 5 5s-2.2 5-5 5H8z"
+                                fill="#8b5cf6" opacity="0.6" />
+                        </svg>
+                        <h3>Cloud & Deployment</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MLflow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my machine learning projects and innovations</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-svg">
+                            <rect width="400" height="200" fill="#f8fafc" />
+                            <rect x="20" y="20" width="360" height="160" rx="8" fill="#2563eb" opacity="0.1" />
+                            <rect x="40" y="40" width="80" height="60" rx="4" fill="#2563eb" opacity="0.6" />
+                            <rect x="140" y="40" width="80" height="60" rx="4" fill="#10b981" opacity="0.6" />
+                            <rect x="240" y="40" width="80" height="60" rx="4" fill="#f59e0b" opacity="0.6" />
+                            <rect x="40" y="120" width="280" height="40" rx="4" fill="#8b5cf6" opacity="0.3" />
+                            <text x="200" y="90" text-anchor="middle" fill="#374151" font-family="Inter"
+                                font-size="12">ML Pipeline</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Intelligent Recommendation System</h3>
+                        <p class="project-description">
+                            Built a scalable recommendation engine using collaborative filtering and deep learning,
+                            achieving 92% accuracy in user preference prediction.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" />
+                                </svg>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-svg">
+                            <rect width="400" height="200" fill="#f8fafc" />
+                            <rect x="20" y="20" width="360" height="160" rx="8" fill="#10b981" opacity="0.1" />
+                            <rect x="50" y="50" width="100" height="100" rx="50" fill="#10b981" opacity="0.6" />
+                            <rect x="170" y="60" width="60" height="80" rx="4" fill="#2563eb" opacity="0.6" />
+                            <rect x="250" y="70" width="100" height="60" rx="4" fill="#f59e0b" opacity="0.6" />
+                            <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Inter"
+                                font-size="12">Computer Vision</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-time Object Detection</h3>
+                        <p class="project-description">
+                            Developed a real-time object detection system using YOLO v5, capable of processing
+                            30 FPS with 95% mAP on custom datasets.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" />
+                                </svg>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-svg">
+                            <rect width="400" height="200" fill="#f8fafc" />
+                            <rect x="20" y="20" width="360" height="160" rx="8" fill="#8b5cf6" opacity="0.1" />
+                            <circle cx="100" cy="100" r="40" fill="#8b5cf6" opacity="0.6" />
+                            <rect x="160" y="60" width="80" height="80" rx="8" fill="#f59e0b" opacity="0.6" />
+                            <polygon points="280,60 320,60 300,100 320,140 280,140 260,100" fill="#ef4444"
+                                opacity="0.6" />
+                            <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Inter"
+                                font-size="12">NLP System</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Analysis Platform</h3>
+                        <p class="project-description">
+                            Created a multi-language sentiment analysis platform using transformer models,
+                            supporting real-time analysis of social media data with 94% accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" />
+                                </svg>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how we can work together</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>faizanhaiderofficial1@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+923061972701</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="40" height="40" rx="8" fill="url(#footerLogoGradient)" />
+                            <text x="20" y="28" text-anchor="middle" fill="white" font-family="Inter, sans-serif"
+                                font-weight="700" font-size="18">FH</text>
+                        </svg>
+                        <span>Faizan Haider</span>
+                    </div>
+                    <p class="footer-description">
+                        Machine Learning Engineer passionate about creating intelligent solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/faizan-ai-ml/" class="social-link linkedin" aria-label="LinkedIn" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/faizan-ai-ml" class="social-link github" aria-label="GitHub" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.kaggle.com/faizandataanalyst" class="social-link kaggle" aria-label="Kaggle" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7.5 3v18M7.5 12l8.5-9M12 12l4.5 9"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#">Data Analysis</a></li>
+                            <li><a href="#">AI Consulting</a></li>
+                            <li><a href="#">Model Deployment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="mailto:faizanhaiderofficial1@gmail.com">faizanhaiderofficial1@gmail.com</a></li>
+                            <li><a href="tel:+923061972701">+923061972701</a></li>
+                            <li><a href="#contact">Get In Touch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Faizan Haider. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

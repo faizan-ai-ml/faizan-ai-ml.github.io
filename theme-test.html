@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0f172a;
+            color: #e5e7eb;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .test-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .primary-color {
+            color: #3b82f6;
+        }
+
+        .secondary-color {
+            color: #10b981;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="gradient-text">Dark Theme Color Test</h1>
+    <div class="test-card">
+        <h3>Color Palette Preview</h3>
+        <p>Primary text color: <span class="primary-color">#e5e7eb</span></p>
+        <p>Secondary text: <span style="color: #9ca3af">#9ca3af</span></p>
+        <p>Primary brand: <span class="primary-color">#3b82f6</span></p>
+        <p>Secondary brand: <span class="secondary-color">#10b981</span></p>
+        <p>Card background: <span style="color: #1e293b">#1e293b</span></p>
+        <p>Border color: <span style="color: #334155">#334155</span></p>
+    </div>
+    <p><a href="index.html" style="color: #3b82f6;">← Back to Portfolio</a></p>
+</body>
+
+</html>

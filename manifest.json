@@ -1,0 +1,62 @@
+{
+    "name": "Faizan Haider - Machine Learning Engineer",
+    "short_name": "Faizan Haider",
+    "description": "Professional Machine Learning Engineer specializing in AI solutions, deep learning, and data science.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2563eb",
+    "lang": "en",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "./assets/images/favicon-16x16.svg",
+            "sizes": "16x16",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "./assets/images/favicon-32x32.svg",
+            "sizes": "32x32",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "./assets/images/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "./assets/images/apple-touch-icon.svg",
+            "sizes": "180x180",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./assets/images/favicon-circle.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "portfolio",
+        "business",
+        "education"
+    ],
+    "shortcuts": [
+        {
+            "name": "About",
+            "short_name": "About",
+            "url": "/#about"
+        },
+        {
+            "name": "Projects",
+            "short_name": "Projects",
+            "url": "/#projects"
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "url": "/#contact"
+        }
+    ]
+}

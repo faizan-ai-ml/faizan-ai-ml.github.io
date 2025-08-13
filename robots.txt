@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: http://faizanhaider.me/sitemap.xml
+
+# Block common crawlers from unnecessary files
+User-agent: *
+Disallow: /assets/
+Allow: /assets/images/profile.jpg
+Allow: /assets/images/favicon*
+Allow: /assets/images/apple-touch-icon*
