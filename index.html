@@ -77,6 +77,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/additions.css">
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -85,6 +86,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
@@ -130,6 +132,7 @@
     </nav>
 
     <!-- Hero Section -->
+    <section id="main-content" aria-label="Main Content">
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -147,7 +150,7 @@
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                        <a href="./assets/faizan-cv.pdf" class="btn btn-cv" download>
+                        <a href="./Faizan%20Haider.pdf" class="btn btn-cv" download>
                             <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                             Download CV
                         </a>
@@ -171,6 +174,7 @@
             </div>
         </div>
     </section>
+</section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -214,7 +218,7 @@
                 <div class="about-image">
                     <div class="about-profile-container">
                         <img src="./assets/images/profile.jpg" alt="Faizan Haider - Machine Learning Engineer"
-                            class="about-profile-image">
+                            class="about-profile-image" loading="lazy">
                         <div class="about-profile-overlay">
                             <div class="about-profile-info">
                                 <h4>Faizan Haider</h4>
@@ -390,6 +394,112 @@
         </div>
     </section>
 
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-subtitle">End-to-end AI solutions and data services for businesses worldwide</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.4"/><circle cx="18" cy="18" r="6" fill="#3b82f6" fill-opacity="0.8"/><circle cx="8" cy="10" r="3" fill="#3b82f6" fill-opacity="0.5"/><circle cx="28" cy="10" r="3" fill="#3b82f6" fill-opacity="0.5"/><circle cx="8" cy="26" r="3" fill="#3b82f6" fill-opacity="0.5"/><circle cx="28" cy="26" r="3" fill="#3b82f6" fill-opacity="0.5"/><line x1="11" y1="12" x2="15" y2="15" stroke="#3b82f6" stroke-width="1.2"/><line x1="25" y1="12" x2="21" y2="15" stroke="#3b82f6" stroke-width="1.2"/><line x1="11" y1="24" x2="15" y2="21" stroke="#3b82f6" stroke-width="1.2"/><line x1="25" y1="24" x2="21" y2="21" stroke="#3b82f6" stroke-width="1.2"/></svg>
+                    </div>
+                    <h3>LLM &amp; RAG Application Development</h3>
+                    <p>Build production-ready chatbots, RAG pipelines, and LLM-powered tools using LangChain, FAISS, and FastAPI. From document Q&amp;A to AI agents — shipped at scale.</p>
+                    <ul class="service-features">
+                        <li>Custom RAG pipelines with vector search</li>
+                        <li>Multi-agent LLM systems (LangChain, CrewAI)</li>
+                        <li>REST API backends with JWT auth</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="2" y="6" width="32" height="24" rx="4" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4"/><rect x="6" y="10" width="10" height="7" rx="2" fill="#10b981" fill-opacity="0.6"/><rect x="20" y="10" width="10" height="3" rx="1" fill="#10b981" fill-opacity="0.4"/><rect x="20" y="15" width="7" height="2" rx="1" fill="#10b981" fill-opacity="0.4"/><rect x="6" y="20" width="24" height="2" rx="1" fill="#10b981" fill-opacity="0.3"/><rect x="6" y="24" width="18" height="2" rx="1" fill="#10b981" fill-opacity="0.3"/></svg>
+                    </div>
+                    <h3>AI SaaS Product Building</h3>
+                    <p>Full-stack AI SaaS development from MVP to production. I handle the backend (FastAPI, PostgreSQL), AI integration (LLMs, ML models), and deployment (Docker, Vercel).</p>
+                    <ul class="service-features">
+                        <li>End-to-end SaaS architecture</li>
+                        <li>AI-powered automation pipelines</li>
+                        <li>CI/CD deployment on cloud platforms</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><polygon points="18,3 28,8 28,20 18,33 8,20 8,8" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5" fill="none"/><circle cx="18" cy="15" r="4" fill="#f59e0b" fill-opacity="0.7"/><circle cx="8" cy="8" r="2.5" fill="#f59e0b" fill-opacity="0.4"/><circle cx="28" cy="8" r="2.5" fill="#f59e0b" fill-opacity="0.4"/><line x1="10" y1="9.5" x2="15" y2="13" stroke="#f59e0b" stroke-width="1"/><line x1="26" y1="9.5" x2="21" y2="13" stroke="#f59e0b" stroke-width="1"/></svg>
+                    </div>
+                    <h3>B2B Lead Generation</h3>
+                    <p>Precision-targeted lead generation for AU/USA clients. I research decision-makers across industries using Google Maps, LinkedIn, and Hunter.io — verified, segmented, and ready to outreach.</p>
+                    <ul class="service-features">
+                        <li>Targeted prospect research (AU, USA, UK)</li>
+                        <li>95%+ email verification accuracy</li>
+                        <li>CRM-ready lead sheets &amp; databases</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="22" width="4" height="10" rx="1" fill="#8b5cf6" fill-opacity="0.7"/><rect x="11" y="16" width="4" height="16" rx="1" fill="#8b5cf6" fill-opacity="0.7"/><rect x="18" y="10" width="4" height="22" rx="1" fill="#8b5cf6" fill-opacity="0.9"/><rect x="25" y="14" width="4" height="18" rx="1" fill="#8b5cf6" fill-opacity="0.7"/><path d="M6 18 L13 13 L20 8 L27 11" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+                    </div>
+                    <h3>ML Model Development</h3>
+                    <p>Custom machine learning models tailored to your data — classification, regression, NLP, or computer vision. Includes feature engineering, model evaluation, and clean API delivery.</p>
+                    <ul class="service-features">
+                        <li>Supervised &amp; unsupervised ML models</li>
+                        <li>End-to-end pipeline (data → API)</li>
+                        <li>Model evaluation &amp; explainability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Feedback</h2>
+                <p class="section-subtitle">What clients say about working with me</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Faizan delivered a highly accurate and well-organized lead database for our roofing company targeting Australian homeowners. The email verification rate was exceptional — nearly all contacts were valid on first send. Will hire again."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JM</div>
+                        <div>
+                            <strong>James M.</strong>
+                            <span>Roofing Business Owner &middot; Australia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"We needed a large, segmented list of dental clinic decision-makers across the US. Faizan delivered ahead of schedule with 95%+ accuracy. Communication was clear and professional throughout."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SR</div>
+                        <div>
+                            <strong>Sarah R.</strong>
+                            <span>Marketing Director &middot; Healthcare, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Faizan built a RAG chatbot for our internal documentation in under two weeks. The API was clean, well-documented, and answered questions with impressive context accuracy. Highly recommend for AI development work."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AK</div>
+                        <div>
+                            <strong>Ahmed K.</strong>
+                            <span>Tech Startup Founder &middot; Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -425,8 +535,7 @@
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/faizan-ai-ml" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
+                            <a PLACEHOLDER_PROJECT_LINK height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
                                 View Code
                             </a>
                         </div>
@@ -459,8 +568,7 @@
                             <span class="tech-tag">LLM</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/faizan-ai-ml" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
+                            <a PLACEHOLDER_PROJECT_LINK height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
                                 View Code
                             </a>
                         </div>
@@ -493,8 +601,7 @@
                             <span class="tech-tag">Next.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/faizan-ai-ml" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
+                            <a PLACEHOLDER_PROJECT_LINK height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
                                 View Code
                             </a>
                         </div>
@@ -531,8 +638,7 @@
                             <span class="tech-tag">Research</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/faizan-ai-ml" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
+                            <a PLACEHOLDER_PROJECT_LINK height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg>
                                 View Code
                             </a>
                         </div>
@@ -627,49 +733,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-svg">
-                            <rect width="400" height="200" fill="#f8fafc" />
-                            <rect x="20" y="20" width="360" height="160" rx="8" fill="#8b5cf6" opacity="0.1" />
-                            <circle cx="100" cy="100" r="40" fill="#8b5cf6" opacity="0.6" />
-                            <rect x="160" y="60" width="80" height="80" rx="8" fill="#f59e0b" opacity="0.6" />
-                            <polygon points="280,60 320,60 300,100 320,140 280,140 260,100" fill="#ef4444"
-                                opacity="0.6" />
-                            <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Inter"
-                                font-size="12">NLP System</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sentiment Analysis Platform</h3>
-                        <p class="project-description">
-                            Created a multi-language sentiment analysis platform using transformer models,
-                            supporting real-time analysis of social media data with 94% accuracy.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">React</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" />
-                                </svg>
-                                View Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" />
-                                    <path fill-rule="evenodd"
-                                        d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" />
-                                </svg>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </div>
@@ -685,47 +749,20 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                                        <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                         </div>
                         <div class="contact-details">
-                            <h3>Email</h3>
-                            <p><a href="mailto:faizanhaiderofficial1@gmail.com" style="color:inherit;text-decoration:none;">faizanhaiderofficial1@gmail.com</a></p>
+                            <h3>Availability</h3>
+                            <p>Open for freelance &amp; full-time roles</p>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p><a href="tel:+923061972701" style="color:inherit;text-decoration:none;">+923061972701</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Punjab, Pakistan</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_KEY">
+                    <input type="hidden" name="subject" value="Portfolio Contact: New Message">
+                    <input type="hidden" name="from_name" value="Faizan Portfolio">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                         <label for="name">Name</label>
@@ -743,13 +780,14 @@
                             required></textarea>
                         <label for="message">Message</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
                         <span>Send Message</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
                         </svg>
                     </button>
+                    <div id="form-result" class="form-result" aria-live="polite"></div>
                 </form>
             </div>
         </div>
@@ -834,7 +872,7 @@
                         <ul>
                             <li><a href="mailto:faizanhaiderofficial1@gmail.com">faizanhaiderofficial1@gmail.com</a>
                             </li>
-                            <li><a href="tel:+923061972701">+923061972701</a></li>
+                            
                             <li><a href="#contact">Get In Touch</a></li>
                         </ul>
                     </div>

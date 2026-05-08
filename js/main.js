@@ -512,66 +512,64 @@ function initializeScrollEffects() {
 
 // Contact Form Handling
 function initializeContactForm() {
-    const form = document.querySelector('.contact-form');
-    const inputs = form.querySelectorAll('input, textarea');
+    const form = document.getElementById('contact-form');
+    const inputs = form ? form.querySelectorAll('input, textarea') : [];
 
-    // Form validation and animation
     inputs.forEach(input => {
-        input.addEventListener('focus', () => {
-            gsap.to(input, {
-                scale: 1.02,
-                duration: 0.2,
-                ease: "power2.out"
-            });
-        });
-
-        input.addEventListener('blur', () => {
-            gsap.to(input, {
-                scale: 1,
-                duration: 0.2,
-                ease: "power2.out"
-            });
-        });
+        input.addEventListener('focus', () => gsap.to(input, { scale: 1.02, duration: 0.2, ease: 'power2.out' }));
+        input.addEventListener('blur',  () => gsap.to(input, { scale: 1,    duration: 0.2, ease: 'power2.out' }));
     });
 
+    if (!form) return;
     form.addEventListener('submit', handleFormSubmit);
 }
 
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
-    const formValues = Object.fromEntries(formData);
+    const form   = e.target;
+    const result = document.getElementById('form-result');
+    const btn    = document.getElementById('submit-btn');
+    if (!result || !btn) return;
 
-    // Simple validation
-    if (!formValues.name || !formValues.email || !formValues.message) {
-        showNotification('Please fill in all required fields.', 'error');
+    // Basic validation
+    const name    = form.querySelector('#name')?.value.trim();
+    const email   = form.querySelector('#email')?.value.trim();
+    const message = form.querySelector('#message')?.value.trim();
+    if (!name || !email || !message) {
+        result.className = 'form-result error';
+        result.textContent = '⚠️ Please fill in all required fields.';
         return;
     }
 
-    // Animate submit button
-    const submitBtn = e.target.querySelector('.btn');
-    const originalText = submitBtn.innerHTML;
+    btn.disabled = true;
+    btn.querySelector('span').textContent = 'Sending…';
+    result.className = 'form-result';
+    result.textContent = '';
 
-    gsap.to(submitBtn, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1,
-        ease: "power2.out"
-    });
-
-    submitBtn.innerHTML = 'Sending...';
-    submitBtn.disabled = true;
-
-    // Simulate form submission
-    setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        e.target.reset();
-    }, 2000);
+    try {
+        const res  = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(form)
+        });
+        const data = await res.json();
+        if (data.success) {
+            result.className = 'form-result success';
+            result.textContent = '✅ Message sent! I\'ll reply within 24 hours.';
+            form.reset();
+        } else {
+            throw new Error(data.message || 'Submission failed');
+        }
+    } catch (err) {
+        result.className = 'form-result error';
+        result.textContent = '❌ Send failed. Email me directly: faizanhaiderofficial1@gmail.com';
+    } finally {
+        btn.disabled = false;
+        btn.querySelector('span').textContent = 'Send Message';
+    }
 }
+
+
 
 // Notification System
 function showNotification(message, type = 'info') {
