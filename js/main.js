@@ -190,6 +190,7 @@ function initializeTypingEffect() {
     const roles = [
         "Machine Learning Engineer",
         "AI Solutions Developer",
+        "Lead Generation Expert",
         "Deep Learning Researcher",
         "Data Scientist"
     ];
@@ -753,6 +754,25 @@ function setDynamicCopyrightYear() {
     const el = document.getElementById('copyright-year');
     if (el) el.textContent = new Date().getFullYear();
 }
+
+// ===== Experience Timeline Animation =====
+(function initExperienceAnimation() {
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+    gsap.utils.toArray('.timeline-item').forEach(function(item, i) {
+        gsap.to(item, {
+            opacity: 1,
+            y: 0,
+            duration: 0.55,
+            ease: 'power2.out',
+            delay: (i % 4) * 0.12,
+            scrollTrigger: {
+                trigger: item,
+                start: 'top 88%',
+                toggleActions: 'play none none none'
+            }
+        });
+    });
+})();
 
 // Add some Easter eggs for developers
 console.log(`
