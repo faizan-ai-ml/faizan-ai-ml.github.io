@@ -772,6 +772,19 @@ function setDynamicCopyrightYear() {
     });
 })();
 
+
+// ===== Floating WhatsApp Button — show after hero =====
+(function initWhatsAppFloat() {
+    const btn = document.getElementById('whatsapp-float');
+    if (!btn) return;
+    const hero = document.getElementById('home');
+    if (!hero) { btn.classList.add('visible'); return; }
+    const obs = new IntersectionObserver(function(entries) {
+        // When hero is NOT intersecting (scrolled past), show button
+        btn.classList.toggle('visible', !entries[0].isIntersecting);
+    }, { threshold: 0.1 });
+    obs.observe(hero);
+})();
 // Add some Easter eggs for developers
 console.log(`
 🚀 Welcome to Faizan Haider's Portfolio!
