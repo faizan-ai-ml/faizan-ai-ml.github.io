@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeSkillBars();
     initializeContactForm();
     initializeTypingEffect();
+    initializeScrollToTop();
+    initializeActiveNav();
+    setDynamicCopyrightYear();
 });
 
 // Preloader Animation
@@ -182,30 +185,41 @@ function animateHero() {
     });
 }
 
-// Typing Effect for Hero Role
+// Typing Effect for Hero Role — cycles through multiple titles
 function initializeTypingEffect() {
-    const roles = ["Machine Learning Engineer", "AI Specialist", "Data Scientist", "ML Engineer"];
+    const roles = [
+        "Machine Learning Engineer",
+        "AI Solutions Developer",
+        "Deep Learning Researcher",
+        "Data Scientist"
+    ];
     let currentRole = 0;
 
-    function typeRole() {
+    function typeNextRole() {
         const heroRole = document.querySelector('.hero-role');
-        if (heroRole) {
-            gsap.to(heroRole, {
-                duration: 2,
-                text: roles[currentRole],
-                ease: "none",
-                onComplete: function () {
-                    setTimeout(() => {
-                        currentRole = (currentRole + 1) % roles.length;
-                        setTimeout(typeRole, 1000);
-                    }, 3000);
-                }
-            });
-        }
+        if (!heroRole) return;
+        // Fade out, update, fade in
+        gsap.to(heroRole, {
+            opacity: 0, duration: 0.4, ease: "power2.in",
+            onComplete: function () {
+                gsap.to(heroRole, {
+                    duration: 1.6,
+                    text: roles[currentRole],
+                    ease: "none",
+                    opacity: 1,
+                    onComplete: function () {
+                        setTimeout(() => {
+                            currentRole = (currentRole + 1) % roles.length;
+                            typeNextRole();
+                        }, 2800);
+                    }
+                });
+            }
+        });
     }
 
-    // Start typing effect after hero animation
-    setTimeout(typeRole, 2000);
+    // Start after hero animation completes
+    setTimeout(typeNextRole, 2200);
 }
 
 // Scroll-triggered Animations
@@ -700,6 +714,45 @@ window.addEventListener('error', function (e) {
 smoothScrollPolyfill();
 optimizePerformance();
 createIntersectionObserver();
+
+// ===== Scroll To Top Button =====
+function initializeScrollToTop() {
+    const btn = document.getElementById('scroll-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        gsap.to(btn, { scale: 0.85, duration: 0.1, yoyo: true, repeat: 1, ease: 'power2.out' });
+    });
+}
+
+// ===== Active Nav Section Highlighting =====
+function initializeActiveNav() {
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                links.forEach(l => l.classList.remove('active'));
+                const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                if (active) active.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-30% 0px -65% 0px', threshold: 0 });
+    sections.forEach(s => observer.observe(s));
+}
+
+// ===== Dynamic Copyright Year =====
+function setDynamicCopyrightYear() {
+    const el = document.getElementById('copyright-year');
+    if (el) el.textContent = new Date().getFullYear();
+}
 
 // Add some Easter eggs for developers
 console.log(`
