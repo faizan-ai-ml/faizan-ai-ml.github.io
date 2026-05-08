@@ -1,3 +1,28 @@
+/* ===== Hero Social Links ===== */
+.hero-social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+.hero-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+.hero-social-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(59,130,246,0.35);
+}
+
 /* ===== Skip Link ===== */
 .skip-link {
     position: absolute;
