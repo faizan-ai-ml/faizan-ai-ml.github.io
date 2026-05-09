@@ -758,6 +758,19 @@ textarea {
     font-size: 0.84rem;
 }
 
+.problem-label {
+    display: inline-flex;
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 4px 9px;
+    color: var(--color-success);
+    background: rgba(22, 163, 74, 0.1);
+    border: 1px solid rgba(22, 163, 74, 0.22);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 500;
+}
+
 .services-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -902,10 +915,6 @@ textarea {
     font-weight: 500;
 }
 
-.project-visual.phishguard {
-    background: linear-gradient(135deg, #0f172a, #2563eb);
-}
-
 .project-visual.leadforge {
     background: linear-gradient(135deg, #0f172a, #16a34a);
 }
@@ -916,6 +925,50 @@ textarea {
 
 .project-visual.mamat {
     background: linear-gradient(135deg, #0f172a, #f59e0b);
+}
+
+.project-visual.career {
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+}
+
+.project-visual.mediai {
+    background: linear-gradient(135deg, #0f172a, #0ea5e9);
+}
+
+.project-visual.n8n {
+    background: linear-gradient(135deg, #0f172a, #ea580c);
+}
+
+.project-visual.docs {
+    background: linear-gradient(135deg, #0f172a, #64748b);
+}
+
+.project-visual.house {
+    background: linear-gradient(135deg, #0f172a, #14b8a6);
+}
+
+.project-visual.employee {
+    background: linear-gradient(135deg, #0f172a, #9333ea);
+}
+
+.project-visual.segment {
+    background: linear-gradient(135deg, #0f172a, #0891b2);
+}
+
+.project-visual.cancer {
+    background: linear-gradient(135deg, #0f172a, #db2777);
+}
+
+.project-visual.dogcat {
+    background: linear-gradient(135deg, #0f172a, #7c2d12);
+}
+
+.project-visual.hand {
+    background: linear-gradient(135deg, #0f172a, #4f46e5);
+}
+
+.project-visual.sheep {
+    background: linear-gradient(135deg, #0f172a, #65a30d);
 }
 
 .project-content {
