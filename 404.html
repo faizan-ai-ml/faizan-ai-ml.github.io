@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="10; url=/">
+    <title>404 - Faizan Haider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a class="nav-logo" href="/"><span class="logo-mark">FH</span><span class="logo-text">Faizan Haider</span></a>
+                <ul class="nav-menu">
+                    <li><a href="/#home" class="nav-link">Home</a></li>
+                    <li><a href="/#about" class="nav-link">About</a></li>
+                    <li><a href="/#experience" class="nav-link">Experience</a></li>
+                    <li><a href="/#skills" class="nav-link">Skills</a></li>
+                    <li><a href="/#services" class="nav-link">Services</a></li>
+                    <li><a href="/#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="/#projects" class="nav-link">Projects</a></li>
+                    <li><a href="/#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="not-found">
+        <div class="container">
+            <h1>404</h1>
+            <p>This page doesn't exist - but my portfolio does.</p>
+            <p>Redirecting home in <span id="countdown">10</span> seconds.</p>
+            <div class="not-found-actions">
+                <a href="/" class="btn btn-primary">Go Home</a>
+                <a href="/#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="opacity:1;transform:none">
+                <p>&copy; <span id="copyright-year">2026</span> Faizan Haider. Made with coffee in Pakistan.</p>
+                <a href="/" class="back-to-top-link">Back home ↑</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const countdown = document.getElementById('countdown');
+        let seconds = 10;
+        setInterval(() => {
+            seconds -= 1;
+            if (countdown) countdown.textContent = String(Math.max(seconds, 0));
+        }, 1000);
+        const year = document.getElementById('copyright-year');
+        if (year) year.textContent = String(new Date().getFullYear());
+    </script>
+</body>
+</html>

@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
-Allow: /assets/images/profile.jpg
-Allow: /assets/images/favicon.svg
-Allow: /assets/images/apple-touch-icon.svg
 
-# Sitemap
 Sitemap: https://faizanhaider.me/sitemap.xml

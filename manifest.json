@@ -1,7 +1,7 @@
 {
-    "name": "Faizan Haider - Machine Learning Engineer",
+    "name": "Faizan Haider - AI/ML Engineer",
     "short_name": "Faizan Haider",
-    "description": "Professional Machine Learning Engineer specializing in AI solutions, deep learning, and data science.",
+    "description": "AI/ML Engineer for RAG chatbots, LLM apps, AI SaaS MVPs, ML models, and B2B lead generation.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#0f172a",
@@ -29,24 +29,19 @@
             "sizes": "180x180",
             "type": "image/svg+xml",
             "purpose": "any maskable"
-        },
-        {
-            "src": "./assets/images/favicon-circle.svg",
-            "sizes": "512x512",
-            "type": "image/svg+xml",
-            "purpose": "any maskable"
         }
     ],
-    "categories": [
-        "portfolio",
-        "business",
-        "education"
-    ],
+    "categories": ["portfolio", "business", "education"],
     "shortcuts": [
         {
-            "name": "About",
-            "short_name": "About",
-            "url": "/#about"
+            "name": "Services",
+            "short_name": "Services",
+            "url": "/#services"
+        },
+        {
+            "name": "Pricing",
+            "short_name": "Pricing",
+            "url": "/#pricing"
         },
         {
             "name": "Projects",
