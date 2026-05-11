@@ -1,4 +1,4 @@
-const CACHE_NAME = 'faizan-portfolio-v3';
+const CACHE_NAME = 'faizan-portfolio-v4';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
